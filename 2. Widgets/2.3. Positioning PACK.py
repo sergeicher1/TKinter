@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+root.title("HERO!")
+root.geometry("300x300+500+300")
+btn = ttk.Button(text="BOTTOM")
+btn.pack(side=BOTTOM)
+btn1 = ttk.Button(text="TOP")
+btn1.pack(side=TOP)
+btn2 = ttk.Button(text="LEFT")
+btn2.pack(side=LEFT)
+btn3 = ttk.Button(text="RIGHT")
+btn3.pack(side=RIGHT)
+btn.pack(side=LEFT,fill=Y)
+btn.pack(expand=True, ipadx=10, ipady=10)
+btn.pack(fill=X, padx=[20, 60], pady=30)
+btn.pack(anchor="nw", padx=20, pady=30)
+btn.pack(anchor="nw")
+btn.pack(expand=True)
+btn.pack(fill=X)
+root.mainloop()
